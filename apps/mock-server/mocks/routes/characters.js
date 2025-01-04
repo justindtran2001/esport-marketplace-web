@@ -1,6 +1,6 @@
-const CHARACTERS_SINGLE = require("./characters-single.json");
-const CHARACTERS_SPOTLIGHT = require("./characters-spotlight.json");
-const CHARACTERS_ALL = require("./characters-all.json");
+const CHARACTERS_SINGLE = require("../data/characters-single.json");
+const CHARACTERS_SPOTLIGHT = require("../data/characters-spotlight.json");
+const CHARACTERS_ALL = require("../data/characters-all.json");
 
 module.exports = [
   {
@@ -67,14 +67,6 @@ module.exports = [
         },
       },
       {
-        id: "id-3",
-        type: "json",
-        options: {
-          status: 200,
-          body: CHARACTERS_ALL[2],
-        },
-      },
-      {
         id: "real",
         type: "middleware",
         options: {
@@ -92,32 +84,6 @@ module.exports = [
                 message: "User not found",
               });
             }
-          },
-        },
-      },
-    ],
-  },
-  {
-    id: "get-spotlight-characters",
-    url: "/api/spotlight-characters",
-    method: "GET",
-    variants: [
-      {
-        id: "success",
-        type: "json",
-        options: {
-          status: 200,
-          body: CHARACTERS_SPOTLIGHT,
-        },
-      },
-      {
-        id: "error",
-        type: "json",
-        options: {
-          status: 400,
-
-          body: {
-            message: "Error",
           },
         },
       },
