@@ -54,6 +54,7 @@ export const SpotlightCharacterCard = ({
         level={3}
         style={{
           maxWidth: "100%",
+          fontFamily: "Drone Ranger Pro Bold",
           textTransform: "uppercase",
           color: "black",
           overflow: "hidden",

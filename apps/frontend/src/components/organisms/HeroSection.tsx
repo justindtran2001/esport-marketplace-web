@@ -79,9 +79,10 @@ export const HeroSection = () => {
                 level={1}
                 style={{
                   position: "absolute",
-                  bottom: "0.6em",
+                  bottom: "0.4em",
                   left: "20%",
-                  fontSize: "3rem",
+                  fontSize: "3.5rem",
+                  fontFamily: "Drone Ranger Pro Bold",
                 }}
               >
                 THE DJ

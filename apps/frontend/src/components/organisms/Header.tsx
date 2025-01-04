@@ -37,7 +37,12 @@ export const Header = () => {
         <TextButton color="primary" variant="solid">
           Connect Wallet
         </TextButton>
-        <IconButton icon={<GlobalOutlined />} color="default" variant="link" />
+        <IconButton
+          icon={<GlobalOutlined />}
+          color="default"
+          variant="link"
+          style={{ border: "none" }}
+        />
         <Dropdown items={dropdownItems} />
       </Space>
     </AntdHeader>

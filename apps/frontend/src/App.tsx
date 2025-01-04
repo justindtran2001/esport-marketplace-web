@@ -1,5 +1,3 @@
-// import "./App.css";
-
 import { ConfigProvider, theme } from "antd";
 import { Marketplace } from "./components/templates";
 
@@ -11,6 +9,7 @@ function App() {
         token: {
           colorPrimary: "#DA34DD",
           colorInfo: "#DA34DD",
+          fontFamily: "Inter",
         },
         components: {
           Layout: {
@@ -19,13 +18,16 @@ function App() {
           },
           Typography: {
             titleMarginTop: "0em",
+            colorLink: "white",
+            colorLinkHover: "#da458f",
           },
           Button: {
-            defaultHoverBorderColor: "rgb(218,69,143)",
-            defaultHoverColor: "rgb(218,69,143)",
-            defaultActiveBorderColor: "rgb(218,69,143)",
-            defaultActiveColor: "rgb(218,69,143)",
-            groupBorderColor: "rgb(218,69,143)",
+            defaultHoverBorderColor: "#da458f",
+            defaultHoverColor: "#da458f",
+            defaultActiveBorderColor: "#da458f",
+            defaultActiveColor: "#da458f",
+            colorBorder: "#da458f",
+            borderRadius: 4,
           },
         },
       }}

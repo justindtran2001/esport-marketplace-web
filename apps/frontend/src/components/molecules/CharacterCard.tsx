@@ -54,12 +54,7 @@ export const CharacterCard = (props: CharacterCardProps) => {
           }}
         />
       </div>
-      <Flex
-        vertical={false}
-        justify="space-between"
-        align="baseline"
-        style={{}}
-      >
+      <Flex vertical={false} justify="space-between" align="center">
         <Text
           strong
           style={{
@@ -69,10 +64,10 @@ export const CharacterCard = (props: CharacterCardProps) => {
         >
           {name}
         </Text>
-        <Text strong>
+        <Flex gap="small">
           <img src="/logos_ethereum.svg" />
-          {`${price} ETH`}
-        </Text>
+          <Text strong>{`${price} ETH`}</Text>
+        </Flex>
       </Flex>
       <CharacterAuthor {...author} />
     </Flex>
