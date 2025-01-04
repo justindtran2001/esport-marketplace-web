@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1001",
+    "name": "Mafia England",
+    "cssBackground": "linear-gradient(90.13deg, #FE955A 0%, #F1DA63 100%)",
+    "category": "Legendary",
+    "image": {
+      "ariaLabel": "mafia-england-image",
+      "src": "/mafia-england.png"
+    },
+    "price": 2.75,
+    "author": {
+      "id": "author-id-123",
+      "name": "Ghozali_Ghozalu",
+      "profilePic": {
+        "ariaLabel": "author-123-image",
+        "src": "/author.jpeg"
+      }
+    }
+  },
+  {
+    "id": "1002",
+    "name": "Basketball Girl",
+    "cssBackground": "linear-gradient(90.13deg, #FE5A5A 0%, #F163D2 100%)",
+    "category": "Mythic",
+    "image": {
+      "ariaLabel": "basketball-girl-image",
+      "src": "/basketball-girl.png"
+    },
+    "price": 2.75,
+    "author": {
+      "id": "author-id-123",
+      "name": "Ghozali_Ghozalu",
+      "profilePic": {
+        "ariaLabel": "author-123-image",
+        "src": "/author.jpeg"
+      }
+    }
+  },
+  {
+    "id": "1005",
+    "name": "Neon Guy",
+    "cssBackground": "linear-gradient(90deg, #43A6F6 0%, #5868F3 100%)",
+    "category": "Rare",
+    "image": {
+      "ariaLabel": "neon-guy-image",
+      "src": "/neon-guy.png"
+    },
+    "price": 2.75,
+    "author": {
+      "id": "author-id-123",
+      "name": "Ghozali_Ghozalu",
+      "profilePic": {
+        "ariaLabel": "author-123-image",
+        "src": "/author.jpeg"
+      }
+    }
+  },
+  {
+    "id": "1004",
+    "name": "Assassin",
+    "cssBackground": "linear-gradient(90.13deg, #49DD81 0%, #22B4C6 100%)",
+    "category": "Common",
+    "image": {
+      "ariaLabel": "assassin-image",
+      "src": "/assassin.png"
+    },
+    "price": 2.75,
+    "author": {
+      "id": "author-id-123",
+      "name": "Ghozali_Ghozalu",
+      "profilePic": {
+        "ariaLabel": "author-123-image",
+        "src": "/author.jpeg"
+      }
+    }
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1001",
+    "name": "Mafia England",
+    "cssBackground": "linear-gradient(90.13deg, #FE955A 0%, #F1DA63 100%)",
+    "category": "Legendary",
+    "image": {
+      "ariaLabel": "mafia-england-image",
+      "src": "/mafia-england.png"
+    },
+    "price": 2.75,
+    "author": {
+      "id": "author-id-123",
+      "name": "Ghozali_Ghozalu",
+      "profilePic": {
+        "ariaLabel": "author-123-image",
+        "src": "/author.jpeg"
+      }
+    }
+  }
+]
