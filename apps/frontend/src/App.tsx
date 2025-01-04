@@ -29,6 +29,13 @@ function App() {
             colorBorder: "#da458f",
             borderRadius: 4,
           },
+          Slider: {
+            handleActiveColor: "#da458f",
+            handleActiveOutlineColor: "#da458f",
+            trackHoverBg: "#da458f",
+            railBg: "#3A3841",
+            railHoverBg: "#3A3841",
+          },
         },
       }}
     >
