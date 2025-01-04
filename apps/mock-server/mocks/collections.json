@@ -1,21 +1,6 @@
 [
   {
-    "id": "base",
-    "routes": ["add-headers:enabled", "get-characters:success", "get-character:success"]
-  },
-  {
-    "id": "no-headers",
-    "from": "base",
-    "routes": ["add-headers:disabled"]
-  },
-  {
-    "id": "all-characters",
-    "from": "base",
-    "routes": ["get-characters:all", "get-character:id-1001", "get-spotlight-characters:success"]
-  },
-  {
-    "id": "character-real",
-    "from": "base",
-    "routes": ["get-characters:real"]
+    "id": "default",
+    "routes": ["add-headers:enabled", "get-characters:real", "get-character:id-1001"]
   }
 ]
