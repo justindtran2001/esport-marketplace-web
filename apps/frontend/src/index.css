@@ -19,18 +19,18 @@ body {
 
 @font-face {
   font-family: "Drone Ranger Pro Black";
-  src: url("../public/fonts/dronerangerpro_black.otf") format("opentype");
+  src: url("/fonts/dronerangerpro_black.otf") format("opentype");
   font-weight: bolder;
 }
 
 @font-face {
   font-family: "Drone Ranger Pro Bold";
-  src: url("../public/fonts/dronerangerpro_bold.otf") format("opentype");
+  src: url("/fonts/dronerangerpro_bold.otf") format("opentype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Drone Ranger Pro";
-  src: url("../public/fonts/dronerangerpro_condensed.otf") format("opentype");
+  src: url("/fonts/dronerangerpro_condensed.otf") format("opentype");
   font-weight: normal;
 }
