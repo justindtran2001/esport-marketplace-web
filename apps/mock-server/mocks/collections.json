@@ -1,6 +1,11 @@
 [
   {
     "id": "default",
-    "routes": ["add-headers:enabled", "get-characters:real", "get-character:id-1001"]
+    "routes": [
+      "add-headers:enabled",
+      "get-characters:real",
+      "get-character:id-1001",
+      "search-characters:success"
+    ]
   }
 ]

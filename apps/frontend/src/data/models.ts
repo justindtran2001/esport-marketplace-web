@@ -24,3 +24,28 @@ export type Image = {
   ariaLabel: string;
   src: string;
 };
+
+export enum PriceSort {
+  LOW_TO_HIGH = "LOW_TO_HIGH",
+  HIGH_TO_LOW = "HIGH_TO_LOW",
+}
+
+export enum TimeSort {
+  LATEST = "LATEST",
+  OLDEST = "OLDEST",
+}
+
+export enum CharacterTheme {
+  HALLOWEEN = "Halloween",
+  CHRISTMAS = "Christmas",
+  LUNAR = "Lunar",
+}
+
+export type QueryFilters = {
+  lowestPrice?: number;
+  highestPrice?: number;
+  theme?: CharacterTheme;
+  tier?: Category | "All";
+  priceSort?: PriceSort;
+  timeSort?: TimeSort;
+};

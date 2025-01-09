@@ -1,11 +1,12 @@
 const CHARACTERS_SINGLE = require("../data/characters-single.json");
 const CHARACTERS_SPOTLIGHT = require("../data/characters-spotlight.json");
-const CHARACTERS_ALL = require("../data/characters-all.json");
+const CHARACTERS_ALL_1 = require("../data/characters-all-1.json");
+const CHARACTERS_ALL_2 = require("../data/characters-all-2.json");
 
 module.exports = [
   {
     id: "get-characters",
-    url: "/api/characters",
+    url: "/characters",
     method: "GET",
     variants: [
       {
@@ -13,7 +14,7 @@ module.exports = [
         type: "json",
         options: {
           status: 200,
-          body: CHARACTERS_ALL,
+          body: CHARACTERS_ALL_1,
         },
       },
       {
@@ -46,7 +47,7 @@ module.exports = [
               res.send(CHARACTERS_SPOTLIGHT);
             } else {
               res.status(200);
-              res.send(CHARACTERS_ALL);
+              res.send(CHARACTERS_ALL_1);
             }
           },
         },
@@ -55,7 +56,7 @@ module.exports = [
   },
   {
     id: "get-character-by-id",
-    url: "/api/characters/:id",
+    url: "/characters/:id",
     method: "GET",
     variants: [
       {
@@ -72,8 +73,8 @@ module.exports = [
         options: {
           middleware: (req, res) => {
             const characterId = req.params.id;
-            const character = CHARACTERS_ALL.find(
-              (characterData) => characterData.id === Number(characterId),
+            const character = CHARACTERS_ALL_1.find(
+              (characterData) => characterData.id === Number(characterId)
             );
             if (character) {
               res.status(200);
@@ -85,6 +86,21 @@ module.exports = [
               });
             }
           },
+        },
+      },
+    ],
+  },
+  {
+    id: "search-characters",
+    url: "/characters/query",
+    method: "POST",
+    variants: [
+      {
+        id: "success",
+        type: "json",
+        options: {
+          status: 200,
+          body: CHARACTERS_ALL_2,
         },
       },
     ],

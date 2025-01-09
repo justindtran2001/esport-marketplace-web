@@ -4,7 +4,7 @@ let apiClient: AxiosInstance | null = null;
 
 if (!apiClient) {
   apiClient = axios.create({
-    baseURL: "http://localhost:3100/api",
+    baseURL: "http://localhost:3100",
     timeout: 5000,
   });
 }

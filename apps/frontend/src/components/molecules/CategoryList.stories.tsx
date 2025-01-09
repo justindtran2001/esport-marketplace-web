@@ -15,6 +15,7 @@ export const Default: Story = {
   args: {
     categories: [Category.COMMON, Category.EPIC, Category.RARE],
     selectedCategory: Category.COMMON,
+    // eslint-disable-next-line no-console
     onCategorySelect: (category) => console.log(category),
   },
 };
